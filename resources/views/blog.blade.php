@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>บทความทั้งหมด</title>
-</head>
-<body>
+@extends('layout');
+@section('title', 'บทความทั้งหมด')
+@section('content')
   <h2>บทความทั้งหมด</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque 
-   voluptatibus nemo architecto quas fugit amet ad molestiae! Mollitia 
-   tempore officiis vero exercitationem, sint, aspernatur, accusantium 
-   voluptatibus quisquam tempora fugit minima.
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    A soluta eum tempora nam labore ut, quam veniam, expedita 
+    quae nemo cupiditate aspernatur cum nostrum nihil eos at 
+    ad, ipsum blanditiis?
   </p>
-  <a href="/about">เกี่ยวกับเรา</a>
-</body>
-</html>
+@endsection
