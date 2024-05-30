@@ -1,10 +1,16 @@
-@extends('layout');
+@extends('layout')
 @section('title', 'บทความทั้งหมด')
 @section('content')
   <h2>บทความทั้งหมด</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    A soluta eum tempora nam labore ut, quam veniam, expedita 
-    quae nemo cupiditate aspernatur cum nostrum nihil eos at 
-    ad, ipsum blanditiis?
-  </p>
+  <hr>
+  @foreach($blogs as $item)
+    <h4>{{$item["title"]}}</h4>
+    <p>{{$item["content"]}}</p> 
+    @if ($item["status"]==true)
+      <p class="text text-success">publish</p>
+    @else
+      <p class="text text-danger">draf</p>
+    @endif
+    <hr>
+  @endforeach
 @endsection

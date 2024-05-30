@@ -1,4 +1,4 @@
-@extends('layout');
+@extends('layout')
 @section('title', 'หน้าเเรกของเว็บไซต์')
 @section('content')
   <h2>หน้าเเรกของเว็บไซ</h2>
